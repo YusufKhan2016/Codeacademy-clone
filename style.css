@@ -627,8 +627,46 @@ header part ends
     margin-left: 10%;
 }
 
-/* Top right content ends  */
+/* --------------------------------------- */
+/*          Top right content ends  */
+/* ------------------------------------------ */
 
 
+/* --------------------------------------------
+        bottom content starts 
+-------------------------------------------- */
+
+/* ----------------------------------------------
+        bottom left content starts 
+----------------------------------------------- */
+.bottom-contents {
+    padding: 30px 135px;
+    display: flex;
+}
+.filter{
+    width: 259px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-heading {
+    display: flex;
+
+}
+
+
+
+.level-filter {
+    display: flex;
+    flex-direction: column;
+}
+.price-filter {
+    display: flex;
+    flex-direction: column;
+}
+.type-time-to-complete {
+    display: flex;
+    flex-direction: column;
+}
 
 
