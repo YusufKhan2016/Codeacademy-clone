@@ -645,14 +645,25 @@ header part ends
 }
 .filter{
     width: 259px;
+    height: 749px;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* scrollbar-width: none; */
 }
+
+.filter hr{
+    margin: 12px 0;
+    width: 200px;
+}
+
 
 
 .filter-heading {
     display: flex;
     align-items: center;
+    margin-bottom: 8px;
 
 }
 .filter-heading svg{
@@ -700,10 +711,23 @@ header part ends
 
 .beginner-checkbox,
 .intermediate-checkbox,
-.advanced-checkbox{
+.advanced-checkbox,
+.free-checkbox,
+.paid-checkbox
+{
     display: flex;
     align-items: center;
-    margin: 6px 0;
+    margin: 8px 0 8px 8px;
+}
+
+.career-path-checkbox,
+.skill-path-checkbox,
+.course-checkbox{
+    margin: 12px 0 12px 8px;
+}
+
+.type-time-to-complete div{
+    margin: 12px 0 12px 8px;
 }
 
 input[type="checkbox"]{
@@ -727,7 +751,7 @@ input[type="checkbox"]:checked::after{
     color: white;
     font-size: 14px;
     position: absolute;
-    top:-3px;
+    top:-2px;
     left: 3px;
 }
 
@@ -744,9 +768,29 @@ input[type="checkbox"]:checked::after{
     display: flex;
     flex-direction: column;
 }
-.type-time-to-complete {
+
+.type-time-to-complete div{
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    
 }
 
+.type-time-to-complete div input[type="radio"] {
+    appearance: none;
+    border: 1px solid blue; /* Ensure border is visible */
+    border-radius: 50%;
+    width: 25px; 
+    height: 25px; 
+    background-color: white;
+    margin-right: 8px;
+}
+.type-time-to-complete div input[type="radio"]:hover {
+    border: 2px solid blue;
+}
+
+.type-time-to-complete div input[type="radio"]:checked {
+    background-color: blue;
+    box-shadow: inset 0 0 0 4px white;
+}
 
